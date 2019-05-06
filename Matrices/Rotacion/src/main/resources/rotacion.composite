@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" 
+	xmlns:frascati="http://frascati.ow2.org/xmlns/sca/1.1" name="MultiplicacionMatrices">
+
+    <service name="rotar" promote="Rotacion/rotar"/>
+    
+    <component name="Rotacion">
+        <service name="rotar">
+            <interface.java interface="java.lang.Runnable"/>
+        </service>
+        <implementation.java class="edu.icesi.implementacion.Main"/>
+        <property name="hostR">localhost</property>
+        <property name="portR">1234</property>
+        <property name="portS">1235</property>
+    </component>
+
+</composite>

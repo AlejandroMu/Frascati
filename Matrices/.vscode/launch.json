@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Rotacion",
+            "request": "launch",
+            "mainClass": "edu.icesi.implementacion.Rotacion",
+            "projectName": "Rotacion"
+        }
+    ]
+}
